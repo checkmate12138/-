@@ -1,0 +1,11 @@
+#ifndef TOOLS_H
+#define TOOLS_H
+#include <stdio.h>
+#ifdef DEBUG
+	#define debug(...) printf(__VA_ARGS__)
+#else
+	#define debug(...)
+#endif
+void rand_two(void);
+void show_view(void);
+#endif//TOOLS_H
